@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Koiranelämää </title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        img {
+            /* yläosan kuva */
+            width: 100%;
+            /* suhde laidasta laitaan */
+            max-height: 300px;
+            /* kuvan koko */
+            object-fit: cover;
+            /* kuvan tyyli */
+            margin-top: 0;
+        }
+
+        h1 {
+            /* otsikko tyyli */
+            font-family: 'Lobster', cursive;
+            color: #432818;
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            background-color: #BB9457;
+            padding: 8px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            margin-top: 5px;
+            position: relative;
+        }
+
+        body {
+            /* sivun background */
+            background-color: #FFE6A7;
+            font-family: 'Quicksand', sans-serif;
+            color: #6F1D1B;
+            margin: 0;
+            padding: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        main {
+            /* tervetuloa teksti */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20%;
+            text-align: center;
+            font-size: 180%;
+            font-size-adjust: from-font;
+            margin: 20px;
+        }
+
+
+        .btn {
+            /* linkki painikkeet */
+            display: inline-block;
+            padding: 12px 50px;
+            background-color: #BB9457;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #99582A;
+        }
+
+        p {
+            /* teksti tyyli */
+            font-family: 'Quicksand', sans-serif;
+            color: #6F1D1B;
+            font-size: 100%;
+            margin: 0;
+        }
+
+        .title-container {
+            /* kuvaus teksti */
+            display: flex;
+            /* flex-wrapilla nämä saa allekkain*/
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-size: 20px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .description-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 90px;
+            font-size: 20px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .toinen-kuva {
+            max-width: 600px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+
+<body>
+
+    <img src="https://images.pexels.com/photos/1612856/pexels-photo-1612856.jpeg"
+        alt="a woman out on a walk with her dog on the beach" />
+
+    <header>
+        <h1>Koiranelämää</h1>
+    </header>
+
+    <!-- Tervetuloa teksti -->
+    <main>
+        <div>
+            <p>Tervetuloa seuraamaan meidän sekä koiriemme seikkailuja!</p>
+            <p>Olemme Mikael, Tuomas ja Tommi, kolme koiraihmistä, jotka rakastavat jakaa tarinoita ja kokemuksia
+                lemmikeistään.</p>
+            <p>Sivultamme tulet löytämään vinkkejä koirien kanssa elämisestä, hauskoja kuvia arjesta sekä paljon muuta.
+            </p>
+            <p>Liity mukaan meidän seikkailuihimme ja löydä inspiraatiota omaan koira-arkeesi!</p>
+        </div>
+    </main>
+
+
+
+    <div class="button-container">
+        <a href="page3.html" class="btn"><b>Etusivu</b></a> <!--Etusivu nappi-->
+        <a href="#target-section" class="btn"><b>Blogit</b></a> <!--Blogi nappi-->
+        <a href="page2.html" class="btn"><b>Yhteystiedot</b></a> <!--Yhteystiedot nappi-->
+    </div>
+
+    <img src="https://images.pexels.com/photos/18962450/pexels-photo-18962450/free-photo-of-two-dogs-playing-on-the-beach.png"
+        alt="two dogs playing" class="toinen-kuva" />
+
+
+    <div class="title-container"> <!--Blogin nimet-->
+        <p class="btn-title"> lyhyt kuvaus mikaelista ihmisenä, sekä sekä lemmikin nimi/nimet ja loppuun vaikka pieni
+            lyhyt kuvaus mikaelista ihmisenä, sekä sekä lemmikin nimi/nimet ja loppuun vaikka pieni
+            lyhyt kuvaus mikaelista ihmisenä, sekä sekä lemmikin nimi/nimet ja loppuun vaikka pieni
+            kuva </p>
+        <p class="btn-title"> lyhyt kuvaus tuomaksesta ihmisenä, sekä lemmikin nimi/nimet ja loppuun vaikka pieni kuva
+            lyhyt kuvaus tuomaksesta ihmisenä, sekä lemmikin nimi/nimet ja loppuun vaikka pieni kuva
+            lyhyt kuvaus tuomaksesta ihmisenä, sekä lemmikin nimi/nimet ja loppuun vaikka pieni kuva
+        </p>
+        <p class="btn-title"> Tommi asuu avopuolisonsa, sekä kahden koiransa kanssa Helsingissä. Vanhempi koirista on
+            yhdeksän vuotias corgi nimeltä Uuno ja nuorempi on vuoden ikäinen shetlanninlammaskoira nimeltä Joda. </p>
+
+    </div>
+
+    <div class="description-container"> <!--Blogin teksti-->
+        <p class="btn-description">Jätän tämän teksti rakenteen vielä tähän, tämän palkin saa helposti kopioitua blogi
+            sivuille, mutta otetaan pois etusivulta sekä yhteystieto sivulta. Tämän sivun html koodi on siis
+            todellisuudessa etusivulinkin koodi.</p>
+        <p class="btn-description"> LYHYET MAININNAT DESIGNISTA, ANTAKAA IHMEESSÄ MIELIPIDE NIIN MUOKKAAN SELLAISEKSI
+            ETTÄ JOKAINEN HYVÄKSYY. 1. LINKKI PAINIKKEET JÄTETTY HIEMAN PIENEMMIKSI, KOSKA CHATGPTN MUKAAN SE ON PAREMPI
+            PUHELINKÄYTTÄJÄLLE. 2. MIKAELIN VERSIOSSA LINKKIPAINIKKEILLA OLI KOKONAISUUDESSAAN TAUSTAVÄRI JOKA JAKAA
+            RUUDUN, LAITANKO TAKAISIN? 3. HALUTAANKO JOHONKIN TEKSTIIN ALLEVIIVAUSTA? </p>
+        <p class="btn-description"></p>
+    </div>
+
+
+
+</body>
+
+</html>
